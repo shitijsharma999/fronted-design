@@ -1,0 +1,154 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Platform 2 Books — a second-hand bookstall opposite Platform 2, open since 1983 and closing in 2026.">
+  <title>Platform 2 Books — Since 1983</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Mono:wght@400;500&family=Fraunces:opsz,wght@9..144,600;9..144,700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <a class="skip-link" href="#main">Skip to content</a>
+
+  <header class="site-header">
+    <a class="brand" href="#top" aria-label="Platform 2 Books home">
+      <span>PLATFORM 2</span><strong>BOOKS</strong>
+    </a>
+    <p class="header-note">SECOND-HAND BOOKS&nbsp;&nbsp; / &nbsp;&nbsp;SINCE 1983</p>
+    <nav aria-label="Main navigation">
+      <a href="#story">Our story</a>
+      <a href="#shelf">The shelf</a>
+      <a href="#last-week">Last week</a>
+      <a href="#save">Save the stall</a>
+    </nav>
+  </header>
+
+  <main id="main">
+    <section class="hero" id="top" aria-labelledby="hero-title">
+      <div class="hero-photo" role="img" aria-label="A busy old railway bookstall beside a train"></div>
+      <div class="ticket hero-ticket">
+        <p class="ticket-kicker">STALL NO. 7</p>
+        <h1 id="hero-title">PLATFORM 2<br>BOOKS</h1>
+        <div class="ticket-rule"></div>
+        <div class="ticket-meta">
+          <span>OPENED 1983</span><span>CLOSING 2026</span>
+        </div>
+        <p class="center">opposite Platform 2<br><b>07:10 — 22:40</b></p>
+        <p class="scribble">There are 27 days left.</p>
+        <a class="walk-in" href="#story">↓ walk inside</a>
+      </div>
+      <div class="hero-stamp">NO. 7<br><small>PLATFORM SIDE</small></div>
+    </section>
+
+    <section class="story section" id="story" aria-labelledby="story-title">
+      <aside class="margin-note" aria-hidden="true">Same books.<br><br>New readers.<br><br>Since 1983.</aside>
+      <div class="story-copy">
+        <p class="eyebrow">THE STORY</p>
+        <h2 id="story-title">Six feet of frontage.<br>A lifetime of departures.</h2>
+        <p>In 1983, Mishraji bought this stall with ₹18,000 borrowed from his brother. The railway gave him six feet of platform frontage.</p>
+        <p>He filled all six.</p>
+        <p>Over the years, the little space became a home for students, dreamers, office-goers and lost travellers. It has seen love stories, exam results, friendships and goodbyes.</p>
+        <p>Now, after 43 years, Mishraji is retiring. The stall will close on <strong>19 October 2026</strong>.</p>
+      </div>
+      <div class="story-art">
+        <div class="photo-card books-photo" aria-label="Illustration of a stack of old books"></div>
+        <div class="quote-paper">“Books are the only thing you can buy that makes you richer.”<br><span>— Mishraji</span></div>
+        <div class="photo-card shelf-photo" aria-label="Illustration of old books on a shelf"></div>
+        <span class="hand-note">Some books<br>have stayed<br>for decades.</span>
+      </div>
+    </section>
+
+    <section class="shelf-section" id="shelf" aria-labelledby="shelf-title">
+      <div class="shelf-heading">
+        <div>
+          <p class="eyebrow">THE SHELF</p>
+          <h2 id="shelf-title">Every book has<br>a previous life.</h2>
+          <p>Choose a book. Read what was left behind.</p>
+        </div>
+        <div class="shelf-controls">
+          <button type="button" class="arrow" id="prevBook" aria-label="Previous book">←</button>
+          <span id="bookCount" aria-live="polite">1 / 8</span>
+          <button type="button" class="arrow" id="nextBook" aria-label="Next book">→</button>
+        </div>
+      </div>
+
+      <div class="shelf-stage">
+        <article class="book-note" id="bookNote" tabindex="0" aria-label="Selected book details"></article>
+        <div class="books" id="books" role="list" aria-label="Books in the stall"></div>
+      </div>
+      <p class="shelf-help">On desktop, use ← →. On mobile, swipe the books or use the arrows.</p>
+    </section>
+
+    <section class="last-week section" id="last-week" aria-labelledby="week-title">
+      <div class="paper-sheet schedule">
+        <p class="eyebrow">THE LAST 7 DAYS</p>
+        <h2 id="week-title">Come before<br>the shutter falls.</h2>
+        <div class="schedule-list">
+          <div><b>MON&nbsp; 14</b><span>Everything <strong>₹50</strong></span></div>
+          <div><b>TUE&nbsp; 15</b><span>Bring a book. Take a book.</span></div>
+          <div><b>WED&nbsp; 16</b><span>Mishraji tells stories from 6:30 PM</span></div>
+          <div><b>THU&nbsp; 17</b><span>Railway-paperback sale</span></div>
+          <div><b>FRI&nbsp; 18</b><span>Last night open until the last train</span></div>
+          <div class="closing"><b>SAT&nbsp; 19</b><span>STALL CLOSES</span></div>
+        </div>
+      </div>
+
+      <div class="paper-sheet campaign" id="save">
+        <p class="eyebrow">THE STALL CAN STAY.</p>
+        <h2>Leave your name.</h2>
+        <p>If this stall has ever helped you miss your train, find a book, pass an afternoon, or wait for someone — leave a note.</p>
+        <form id="campaignForm">
+          <label for="name">NAME <input id="name" name="name" autocomplete="name" required></label>
+          <label for="city">CITY <input id="city" name="city" autocomplete="address-level2" required></label>
+          <label for="reason">WHY THIS PLACE MATTERS <textarea id="reason" name="reason" rows="3" required></textarea></label>
+          <button type="submit" class="red-button">ADD MY NAME</button>
+        </form>
+        <p class="people-count"><strong id="supportCount">1,284</strong> people have left their names.</p>
+        <p id="formMessage" class="form-message" role="status" aria-live="polite"></p>
+      </div>
+
+      <div class="train-sketch" aria-hidden="true">
+        <svg viewBox="0 0 420 220" role="presentation">
+          <g fill="none" stroke="currentColor" stroke-width="4" stroke-linecap="round" stroke-linejoin="round">
+            <path d="M34 160h346M55 178h300M80 160V65h210v95M290 160V92h75v68M55 65h235"/>
+            <path d="M90 93h92v42H90zM205 93h42v42h-42zM307 112h38v28h-38z"/>
+            <circle cx="116" cy="160" r="17"/><circle cx="280" cy="160" r="17"/>
+            <path d="M30 193h360M70 208h290M20 42h82M318 42h82M102 22v42M318 22v42"/>
+          </g>
+        </svg>
+        <p>Not just a bookstall.<br>A part of our journey.</p>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div>
+      <h2>PLATFORM 2 BOOKS</h2>
+      <p>1983 — 2026</p>
+      <small>If you bought something here,<br>you are already part of the story.</small>
+    </div>
+    <div class="footer-ticket">
+      <span>INDIAN RAILWAYS</span>
+      <b>FROM: HERE</b>
+      <b>TO: WHEREVER</b>
+      <b>FARE: ₹0</b>
+      <small>KEEP THIS TICKET</small>
+    </div>
+  </footer>
+
+  <dialog id="bookDialog" aria-labelledby="dialogTitle">
+    <button class="dialog-close" id="closeDialog" aria-label="Close book">×</button>
+    <p class="eyebrow">BOOK FROM STALL NO. 7</p>
+    <h2 id="dialogTitle"></h2>
+    <p id="dialogAuthor" class="dialog-author"></p>
+    <div class="dialog-divider"></div>
+    <p id="dialogStory"></p>
+    <div class="dialog-meta" id="dialogMeta"></div>
+  </dialog>
+
+  <script src="script.js"></script>
+</body>
+</html>
